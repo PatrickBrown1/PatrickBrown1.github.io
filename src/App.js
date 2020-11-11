@@ -3,7 +3,7 @@ import WorkInProgressPage from "./WorkInProgressPage.js";
 import "./App.css";
 import Typist from 'react-typist';
 import PatrickImage from "./PatrickPicture.jpg";
-
+import LinkView from "./LinkView.js"
 
 function MainHeader(){
   return(
@@ -46,7 +46,7 @@ function App() {
       <div className="hero-view">
         <div className="hero-panel">
           <div className="image-container">
-            <img className="image" src={PatrickImage} />
+            <img className="image" src={PatrickImage} alt="Patrick Brown" />
           </div>
           <div className="text-container">
             <MainHeader />
@@ -54,6 +54,7 @@ function App() {
           </div>
         </div>
       </div>
+      <LinkView />
     </div>
   );
 }

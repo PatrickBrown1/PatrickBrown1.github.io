@@ -1,0 +1,23 @@
+.link-view {
+    width: 100%;
+    height: 80vh;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.link-item{
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link-image {
+    max-width: 5em;
+    max-height: 5em;
+    border-radius: 50%;
+}
