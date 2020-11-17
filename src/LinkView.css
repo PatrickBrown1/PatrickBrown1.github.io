@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
 .link-view {
     width: 100%;
     height: 80vh;
@@ -8,16 +10,23 @@
     justify-content: flex-start;
 }
 .link-item{
-    width: 20%;
-    height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin: 40px;
+    overflow: hidden;
 }
 
 .link-image {
     max-width: 5em;
     max-height: 5em;
     border-radius: 50%;
+}
+.link-text {
+    padding-left: 50px;
+    color: rgb(22, 0, 32);
+    font-size: 2em;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
 }
