@@ -16,17 +16,35 @@
     justify-content: flex-start;
     margin: 40px;
     overflow: hidden;
+    border-radius: 2.5em / 2.5em;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 30px 1px rgba(245, 245, 245, 1);
 }
-
+a {
+    text-decoration: none;
+    color: black;
+    display: inherit;
+    align-items: center;
+}
 .link-image {
     max-width: 5em;
     max-height: 5em;
     border-radius: 50%;
+    background-color: white;
 }
-.link-text {
-    padding-left: 50px;
+.big-text {
+    padding-left: 40px;
+    width: 100%;
     color: rgb(22, 0, 32);
     font-size: 2em;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
+.small-text {
+    padding-left: 20px;
+    width: 100%;
+    color: rgb(22, 0, 32);
+    font-size: 1.5em;
     font-weight: 600;
     font-family: "Raleway", sans-serif;
 }

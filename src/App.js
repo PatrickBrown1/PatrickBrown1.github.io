@@ -17,7 +17,7 @@ function MainHeader(){
       }}
       avgTypingDelay={100}
     >
-      <Typist.Delay ms={1000} />
+      <Typist.Delay ms={500} />
       <h1 className="mainHeader">Patrick Brown</h1>
     </Typist>
   );
@@ -34,7 +34,7 @@ function SubHeader(){
       }}
       avgTypingDelay={50}
     >
-      <Typist.Delay ms={3000} />
+      <Typist.Delay ms={2500} />
       <h2 className="subHeader">Student, Programmer, Baker</h2>
     </Typist>
   );
