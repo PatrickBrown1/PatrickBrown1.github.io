@@ -3,7 +3,8 @@ import Typist from 'react-typist';
 
 // import "./App.css";
 // import LinkView from "../LinkView"
-import HeroView from '../HeroView/HeroView';
+import Hero from '../pages/Hero/Hero';
+import AboutMe from '../pages/AboutMe/AboutMe';
 // import PatrickImage from "../../assets/PatrickPicture.jpg";
 
 // const MainHeader = () => {
@@ -61,7 +62,10 @@ import HeroView from '../HeroView/HeroView';
 // }
 const App = () => {
   return (
-    <HeroView />
+    <>
+      <Hero />
+      <AboutMe />
+    </>
   );
 }
 export default App;
