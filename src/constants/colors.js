@@ -1,5 +1,16 @@
 export const COLORS = {
-    white: '#FFFFFF',
-    black: '#000000'
-    
+    white: '#fbfef9ff',
+    black: '#191923ff',
+    green: '#0cd44fff',
+    red: '#0cd44fff',
+    blue: '#6287f9ff',
+    yellow: '#fbbe4bff'
 }
+
+/* CSS HEX from COOLORS.IO */
+// --raisin-black: #191923ff;
+// --baby-powder: #fbfef9ff;
+// --malachite: #0cd44fff;
+// --red-munsell: #e73648ff;
+// --cornflower-blue: #6287f9ff;
+// --maximum-yellow-red: #fbbe4bff;
