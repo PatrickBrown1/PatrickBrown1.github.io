@@ -21,10 +21,12 @@ export const MainContent = styled.div`
     width: 60%;
 
     h1 {
+        font-family: Average Sans;
         margin: 0 0 10px 0;
     }
 
     p {
+        font-family: Mako;
         margin: 0;
     }
 `;
@@ -59,10 +61,10 @@ export const VerticalBorder = styled(BorderSegment)`
 
 export const TopBorder = styled(BorderSegment)`
     top: -4px;
-    width: 40%;
+    width: 30%;
 `;
 
 export const BottomBorder = styled(BorderSegment)`
     bottom: -4px;
-    width: 40%;
+    width: 30%;
 `;
