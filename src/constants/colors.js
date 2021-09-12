@@ -1,4 +1,4 @@
-export const COLORS = {
+const COLORS = {
     white: '#fbfef9ff',
     black: '#191923ff',
     green: '#0cd44fff',
@@ -7,6 +7,7 @@ export const COLORS = {
     yellow: '#fbbe4bff'
 }
 
+export default COLORS;
 /* CSS HEX from COOLORS.IO */
 // --raisin-black: #191923ff;
 // --baby-powder: #fbfef9ff;
