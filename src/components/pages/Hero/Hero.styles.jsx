@@ -8,5 +8,6 @@ export const HeroContainer = styled.div`
     width: 100vw;
     height: 100vh; // needs to change
     
-    background-color: ${COLORS.green};
+    box-sizing: border-box;
+    border: 2px solid ${COLORS.green};
 `;

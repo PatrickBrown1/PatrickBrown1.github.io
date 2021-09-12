@@ -7,6 +7,7 @@ export const AboutMeContainer = styled.div`
     margin: 0;
     width: 100vw;
     height: 100vh; // needs to change
-    
-    background-color: ${COLORS.red};
+
+    box-sizing: border-box;
+    border: 2px solid ${COLORS.red};
 `;

@@ -8,5 +8,6 @@ export const ContactContainer = styled.div`
     width: 100vw;
     height: 100vh; // needs to change
     
-    background-color: ${COLORS.blue};
+    box-sizing: border-box;
+    border: 2px solid ${COLORS.blue};
 `;
