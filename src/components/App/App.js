@@ -5,6 +5,9 @@ import Typist from 'react-typist';
 // import LinkView from "../LinkView"
 import Hero from '../pages/Hero/Hero';
 import AboutMe from '../pages/AboutMe/AboutMe';
+import Contact from '../pages/Contact/Contact';
+import Experience from '../pages/Experience/Experience';
+
 // import PatrickImage from "../../assets/PatrickPicture.jpg";
 
 // const MainHeader = () => {
@@ -65,6 +68,8 @@ const App = () => {
     <>
       <Hero />
       <AboutMe />
+      <Experience />
+      <Contact />
     </>
   );
 }
