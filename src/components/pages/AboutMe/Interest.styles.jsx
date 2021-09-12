@@ -20,7 +20,7 @@ export const MainContent = styled.div`
 
     width: 60%;
 
-    h1 {
+    h2 {
         font-family: Average Sans;
         margin: 0 0 10px 0;
     }
@@ -34,9 +34,11 @@ export const MainContent = styled.div`
 export const ImageContainer = styled.div`
     position: relative;
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
     width: 40%;
-
+    font-size: 64px;
+    
 `;
 
 const BorderSegment = styled.div`
@@ -52,6 +54,8 @@ const BorderSegment = styled.div`
     border: 2px solid;
     border-color: ${props => props.color};
     border-radius: 2px;
+
+    background-color: ${props => props.color}; // for zoomed out views
 `;
 
 export const VerticalBorder = styled(BorderSegment)`

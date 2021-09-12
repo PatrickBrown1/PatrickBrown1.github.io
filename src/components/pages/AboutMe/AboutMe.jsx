@@ -6,11 +6,67 @@ import COLORS from '../../../constants/colors';
 const AboutMe = () => {
     return (
         <S.AboutMeContainer>
-            About Me
-            <Interest color={COLORS.red} inverted={false}/>
-            <Interest color={COLORS.yellow} inverted={true}/>
-            <Interest color={COLORS.blue} inverted={false}/>
-            <Interest color={COLORS.green} inverted={true}/>
+            <h1>A Little Bit About Me</h1>
+            <Interest 
+                color={COLORS.red} 
+                inverted={false}
+                title="Baking"
+                content=
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante mauris, 
+                    maximus quis luctus vel, facilisis sit amet lacus. Morbi in sagittis ligula. 
+                    Mauris eu luctus justo. Donec consequat augue at nunc pharetra, vitae vulputate nisi
+                    fermentum. Phasellus porttitor felis maximus, dignissim orci feugiat, gravida orci.
+                    Fusce tortor magna, tincidunt in dui id, pellentesque mattis nunc. Etiam massa magna,
+                    luctus eu lectus blandit, blandit interdum enim. In mi tortor, dignissim ac pellentesque
+                    sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
+                    dolor. Cras sit amet elementum elit, cursus venenatis nisl."   
+                image="👨‍🍳 🍰"/*🎂🍰*/
+            />
+            <Interest 
+                color={COLORS.yellow} 
+                inverted={true}
+                title="Lifting"
+                content=
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante mauris, 
+                    maximus quis luctus vel, facilisis sit amet lacus. Morbi in sagittis ligula. 
+                    Mauris eu luctus justo. Donec consequat augue at nunc pharetra, vitae vulputate nisi
+                    fermentum. Phasellus porttitor felis maximus, dignissim orci feugiat, gravida orci.
+                    Fusce tortor magna, tincidunt in dui id, pellentesque mattis nunc. Etiam massa magna,
+                    luctus eu lectus blandit, blandit interdum enim. In mi tortor, dignissim ac pellentesque
+                    sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
+                    dolor. Cras sit amet elementum elit, cursus venenatis nisl."   
+                image="🦍 💪"
+            />
+            <Interest 
+                color={COLORS.blue} 
+                inverted={false}
+                title="Coding"
+                content=
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante mauris, 
+                    maximus quis luctus vel, facilisis sit amet lacus. Morbi in sagittis ligula. 
+                    Mauris eu luctus justo. Donec consequat augue at nunc pharetra, vitae vulputate nisi
+                    fermentum. Phasellus porttitor felis maximus, dignissim orci feugiat, gravida orci.
+                    Fusce tortor magna, tincidunt in dui id, pellentesque mattis nunc. Etiam massa magna,
+                    luctus eu lectus blandit, blandit interdum enim. In mi tortor, dignissim ac pellentesque
+                    sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
+                    dolor. Cras sit amet elementum elit, cursus venenatis nisl."            
+                image="👨‍💻"
+            />
+            <Interest 
+                color={COLORS.green} 
+                inverted={true}
+                title="Music"
+                content=
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante mauris, 
+                    maximus quis luctus vel, facilisis sit amet lacus. Morbi in sagittis ligula. 
+                    Mauris eu luctus justo. Donec consequat augue at nunc pharetra, vitae vulputate nisi
+                    fermentum. Phasellus porttitor felis maximus, dignissim orci feugiat, gravida orci.
+                    Fusce tortor magna, tincidunt in dui id, pellentesque mattis nunc. Etiam massa magna,
+                    luctus eu lectus blandit, blandit interdum enim. In mi tortor, dignissim ac pellentesque
+                    sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
+                    dolor. Cras sit amet elementum elit, cursus venenatis nisl."   
+                image="🎶 🎧"
+            />
         </S.AboutMeContainer>
     );
 }
