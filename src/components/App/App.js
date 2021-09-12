@@ -1,11 +1,12 @@
 import React from "react";
-import WorkInProgressPage from "./WorkInProgressPage.js";
-import "./App.css";
 import Typist from 'react-typist';
-import PatrickImage from "./PatrickPicture.jpg";
-import LinkView from "./LinkView.js"
 
-function MainHeader(){
+import "./App.css";
+import LinkView from "../LinkView"
+
+import PatrickImage from "../../assets/PatrickPicture.jpg";
+
+const MainHeader = () => {
   return(
     <Typist
       cursor={{
@@ -22,7 +23,7 @@ function MainHeader(){
     </Typist>
   );
 }
-function SubHeader(){
+const SubHeader = () => {
   return(
     <Typist 
       cursor={{
@@ -40,7 +41,7 @@ function SubHeader(){
   );
   
 }
-function App() {
+const App = () => {
   return (
     <div className="App">
       <div className="hero-view">

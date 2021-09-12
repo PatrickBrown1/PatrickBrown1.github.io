@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./LinkView.css";
-import LinkedInImage from "./linked-in-image.png";
-import GithubImage from "./github-image.png";
-import EmailImage from "./email-image.png";
+import LinkedInImage from "../../assets/linked-in-image.png";
+import GithubImage from "../../assets/github-image.png";
+import EmailImage from "../../assets/email-image.png";
 import {useSpring, animated} from 'react-spring'
 
 function LinkItem(props){
