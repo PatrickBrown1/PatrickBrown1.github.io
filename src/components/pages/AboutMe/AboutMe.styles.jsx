@@ -6,7 +6,7 @@ export const AboutMeContainer = styled.div`
     display: block;
     margin: 0;
     width: 100vw;
-    height: 100vh; // needs to change
+    min-height: 100vh; // needs to change
 
     box-sizing: border-box;
     border: 2px solid ${COLORS.red};

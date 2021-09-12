@@ -1,10 +1,24 @@
 import React from 'react';
 import * as S from './Interest.styles.jsx';
+import COLORS from '../../../constants/colors';
 
-const Interest = ({ inverted = false, }) => {
+
+const Border = ({inverted = false, color}) => {
+    return (
+        <>
+            <S.TopBorder color={color} />
+            <S.VerticalBorder color={color} />
+            <S.BottomBorder color={color} />
+        </>
+    );
+}
+
+const Interest = ({ inverted = false, color = COLORS.green}) => {
     return (
         <S.InterestContainer inverted={inverted}>
-            <S.MainContent> 
+            <Border inverted={inverted} color={color}/>
+
+            <S.MainContent color={color}> 
                 <h1>Coding</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante mauris, 

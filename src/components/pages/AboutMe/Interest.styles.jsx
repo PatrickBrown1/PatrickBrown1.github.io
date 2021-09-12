@@ -6,11 +6,11 @@ export const InterestContainer = styled.div`
     display: flex;
     flex-direction: ${props => props.inverted ? `row-reverse` : `row`};
 
-    margin: 15px;
+    margin: 4px;
     max-width: 900px;
     min-height: 300px;
 
-    background-color: ${props => props.inverted ? COLORS.red : COLORS.green};
+    background-color: ${COLORS.white};
 `;
 
 export const MainContent = styled.div`
@@ -35,4 +35,34 @@ export const ImageContainer = styled.div`
     
     width: 40%;
 
+`;
+
+const BorderSegment = styled.div`
+    content: '';
+    display: block;
+    position: absolute;
+    left: ${props => props.inverted ? 
+        `right: -4px;`
+    :
+        `left: -4px;`
+    }
+
+    border: 2px solid;
+    border-color: ${props => props.color};
+    border-radius: 2px;
+`;
+
+export const VerticalBorder = styled(BorderSegment)`
+    top: -4px;
+    height: calc(100% + 4px);
+`;
+
+export const TopBorder = styled(BorderSegment)`
+    top: -4px;
+    width: 40%;
+`;
+
+export const BottomBorder = styled(BorderSegment)`
+    bottom: -4px;
+    width: 40%;
 `;
