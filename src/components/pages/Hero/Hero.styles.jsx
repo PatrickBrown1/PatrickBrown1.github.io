@@ -14,7 +14,6 @@ export const HeroContainer = styled.div`
     height: 100vh; // needs to change
     
     box-sizing: border-box;
-    border: 2px solid ${COLORS.green};
 `;
 
 export const HeaderContainer = styled.div`
@@ -63,15 +62,18 @@ export const HeaderText = styled.div`
     div {
         display: flex;
         flex-direction: row;
+        justify-content: ${props => props.mobile ? 'center' : 'flex-start'};
         flex-wrap: wrap;
-        font-size: ${props => props.mobile ? '1.3em' : '1.5em'};
+
+        font-size: 1.5em;
         font-weight: 300;
         font-family: Average Sans;
-        margin: ${props => props.mobile ? '15px 0' : '0'};
+
+        margin: ${props => props.mobile ? '15px 10px' : '0'};
         a {
             color: ${COLORS.black};
             text-decoration: none;
-            padding: 0px 8px;
+            padding: 0px 5px;
             white-space: nowrap;
             :hover {
                 color: #44445F;

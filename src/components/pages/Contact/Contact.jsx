@@ -4,7 +4,7 @@ import * as S from './Contact.styles';
 const Contact = () => {
     return (
         <S.ContactContainer id="contact">
-            Contact
+            <h1>Contact Me</h1>
         </S.ContactContainer>
     );
 }

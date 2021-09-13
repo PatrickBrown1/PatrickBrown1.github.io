@@ -1,64 +1,9 @@
 import React from 'react';
 import * as S from './Hero.styles';
 
-
 import PatrickImage from "../../../assets/PatrickPicture.jpg";
 
-// const MainHeader = () => {
-//   return(
-//     <Typist
-//       cursor={{
-//         show: false,
-//         blink: true,
-//         element: '|',
-//         hideWhenDone: true,
-//         hideWhenDoneDelay: 0,
-//       }}
-//       avgTypingDelay={100}
-//     >
-//       <Typist.Delay ms={500} />
-//       <h1 className="mainHeader">Patrick Brown</h1>
-//     </Typist>
-//   );
-// }
-// const SubHeader = () => {
-//   return(
-//     <Typist 
-//       cursor={{
-//         show: false,
-//         blink: true,
-//         element: '|',
-//         hideWhenDone: true,
-//         hideWhenDoneDelay: 0,
-//       }}
-//       avgTypingDelay={50}
-//     >
-//       <Typist.Delay ms={2500} />
-//       <h2 className="subHeader">Student, Programmer, Baker</h2>
-//     </Typist>
-//   );
-  
-// }
-// const App = () => {
-//   return (
-//     <div className="App">
-//       <div className="hero-view">
-//         <div className="hero-panel">
-//           <div className="image-container">
-//             <img className="image" src={PatrickImage} />
-//           </div>
-//           <div className="text-container">
-//             <MainHeader />
-//             <SubHeader />
-//           </div>
-//         </div>
-//       </div>
-//       <LinkView />
-//     </div>
-//   );
-// }
 const Hero = ({ windowSize }) => {
-    console.log(windowSize)
     return (
         <S.HeroContainer>
             {windowSize.width >= 650 ?
@@ -69,10 +14,14 @@ const Hero = ({ windowSize }) => {
                     <S.HeaderText>
                         <h1>Patrick Brown</h1>
                         <div>
-                            <a href="#experience">Experience</a>
-                            <a href="#aboutme">About Me</a>
-                            <a href="#experience">Resume</a>
-                            <a href="#contact">Contact</a>
+                            <span>
+                                <a href="#aboutme">About Me</a>
+                                <a href="#experience">Experience</a>
+                            </span>
+                            <span>
+                                <a href="#experience">Resume</a>
+                                <a href="#contact">Contact</a>
+                            </span>
                         </div>
                     </S.HeaderText>
                 </S.HeaderContainer>
@@ -83,10 +32,14 @@ const Hero = ({ windowSize }) => {
                         <S.Image src={PatrickImage} alt="Patrick Brown" />
                     </S.ImageContainer>
                     <div>
-                        <a href="#experience">Experience</a>
-                        <a href="#aboutme">About Me</a>
-                        <a href="#experience">Resume</a>
-                        <a href="#contact">Contact</a>
+                        <span>
+                            <a href="#aboutme">About Me</a>
+                            <a href="#experience">Experience</a>
+                        </span>
+                        <span>
+                            <a href="#experience">Resume</a>
+                            <a href="#contact">Contact</a>
+                        </span>
                     </div>
                 </S.HeaderText>
             }

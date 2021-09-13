@@ -6,12 +6,13 @@ export const AboutMeContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin: 0;
     width: 100vw;
     min-height: 100vh; // needs to change
     padding: 20px 0px;
+
     box-sizing: border-box;
-    border: 2px solid ${COLORS.red};
 
     h1 {
         font-family: Istok Web;
