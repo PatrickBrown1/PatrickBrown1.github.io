@@ -3,7 +3,7 @@ import * as S from './Experience.styles';
 
 const Experience = () => {
     return (
-        <S.ExperienceContainer>
+        <S.ExperienceContainer id="experience">
             Experience
         </S.ExperienceContainer>
     );

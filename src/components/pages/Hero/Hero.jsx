@@ -68,7 +68,12 @@ const Hero = ({ windowSize }) => {
                     </S.ImageContainer>
                     <S.HeaderText>
                         <h1>Patrick Brown</h1>
-                        <h2>Experience About Me Resume Contact</h2>
+                        <div>
+                            <a href="#experience">Experience</a>
+                            <a href="#aboutme">About Me</a>
+                            <a href="#experience">Resume</a>
+                            <a href="#contact">Contact</a>
+                        </div>
                     </S.HeaderText>
                 </S.HeaderContainer>
             :
@@ -77,7 +82,12 @@ const Hero = ({ windowSize }) => {
                     <S.ImageContainer mobile={windowSize.width <= 650}>
                         <S.Image src={PatrickImage} alt="Patrick Brown" />
                     </S.ImageContainer>
-                    <h2>Experience About Me Resume Contact</h2>
+                    <div>
+                        <a href="#experience">Experience</a>
+                        <a href="#aboutme">About Me</a>
+                        <a href="#experience">Resume</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </S.HeaderText>
             }
             

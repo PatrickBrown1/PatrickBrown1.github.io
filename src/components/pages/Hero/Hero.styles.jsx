@@ -60,10 +60,22 @@ export const HeaderText = styled.div`
         font-family: Istok Web;
         margin: ${props => props.mobile ? '15px 0' : '0'};;
     }
-    h2 {
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         font-size: ${props => props.mobile ? '1.3em' : '1.5em'};
         font-weight: 300;
         font-family: Average Sans;
-        margin: ${props => props.mobile ? '15px 0' : '0'};;
+        margin: ${props => props.mobile ? '15px 0' : '0'};
+        a {
+            color: ${COLORS.black};
+            text-decoration: none;
+            padding: 0px 8px;
+            white-space: nowrap;
+            :hover {
+                color: #44445F;
+            }
+        }
     }
 `;

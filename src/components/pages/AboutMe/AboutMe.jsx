@@ -5,7 +5,7 @@ import COLORS from '../../../constants/colors';
 
 const AboutMe = () => {
     return (
-        <S.AboutMeContainer>
+        <S.AboutMeContainer id="aboutme">
             <h1>A Little Bit About Me</h1>
             <Interest 
                 color={COLORS.red} 

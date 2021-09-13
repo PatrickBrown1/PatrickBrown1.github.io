@@ -3,7 +3,7 @@ import * as S from './Contact.styles';
 
 const Contact = () => {
     return (
-        <S.ContactContainer>
+        <S.ContactContainer id="contact">
             Contact
         </S.ContactContainer>
     );
