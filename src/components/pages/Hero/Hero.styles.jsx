@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import COLORS from '../../../constants/colors';
+import { Link as _Link } from "react-scroll";
 
 export const HeroContainer = styled.div`
     position: relative;
@@ -59,6 +60,7 @@ export const HeaderText = styled.div`
         font-family: Istok Web;
         margin: ${props => props.mobile ? '15px 0' : '0'};;
     }
+
     div {
         display: flex;
         flex-direction: row;
@@ -70,14 +72,15 @@ export const HeaderText = styled.div`
         font-family: Average Sans;
 
         margin: ${props => props.mobile ? '15px 10px' : '0'};
-        a {
-            color: ${COLORS.black};
-            text-decoration: none;
-            padding: 0px 5px;
-            white-space: nowrap;
-            :hover {
-                color: #44445F;
-            }
-        }
+    }
+`;
+export const Link = styled(_Link)`
+    color: ${COLORS.black};
+    text-decoration: none;
+    padding: 0px 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    :hover {
+        color: #44445F;
     }
 `;

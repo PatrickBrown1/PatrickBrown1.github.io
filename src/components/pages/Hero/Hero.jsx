@@ -15,12 +15,44 @@ const Hero = ({ windowSize }) => {
                         <h1>Patrick Brown</h1>
                         <div>
                             <span>
-                                <a href="#aboutme">About Me</a>
-                                <a href="#experience">Experience</a>
+                                <S.Link
+                                    activeClass="active"
+                                    to="aboutme"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    About Me
+                                </S.Link>
+                                <S.Link
+                                    activeClass="active"
+                                    to="experience"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Experience
+                                </S.Link>
                             </span>
                             <span>
-                                <a href="#experience">Resume</a>
-                                <a href="#contact">Contact</a>
+                                <S.Link
+                                    activeClass="active"
+                                    to="experience"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Resume
+                                </S.Link>
+                                <S.Link
+                                    activeClass="active"
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    Contact
+                                </S.Link>
                             </span>
                         </div>
                     </S.HeaderText>
@@ -33,12 +65,44 @@ const Hero = ({ windowSize }) => {
                     </S.ImageContainer>
                     <div>
                         <span>
-                            <a href="#aboutme">About Me</a>
-                            <a href="#experience">Experience</a>
+                            <S.Link
+                                activeClass="active"
+                                to="aboutme"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                            >
+                                About Me
+                            </S.Link>
+                            <S.Link
+                                activeClass="active"
+                                to="experience"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                            >
+                                Experience
+                            </S.Link>
                         </span>
                         <span>
-                            <a href="#experience">Resume</a>
-                            <a href="#contact">Contact</a>
+                            <S.Link
+                                activeClass="active"
+                                to="experience"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                            >
+                                Resume
+                            </S.Link>
+                            <S.Link
+                                activeClass="active"
+                                to="contact"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                            >
+                                Contact
+                            </S.Link>
                         </span>
                     </div>
                 </S.HeaderText>
