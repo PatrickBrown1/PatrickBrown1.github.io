@@ -19,3 +19,10 @@ export const ExperienceContainer = styled.div`
         margin: 30px 0px;
     }
 `;
+
+export const Divider = styled.div`
+    width: 100%;
+    max-width: 1000px;
+    min-height: 2px;
+    background-color: ${COLORS.light_grey};
+`;

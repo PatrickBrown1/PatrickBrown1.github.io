@@ -10,7 +10,7 @@ export const ExperienceContainer = styled.div`
     margin: 4px;
     max-width: 900px;
     min-height: 300px;
-    margin: 50px 0px;
+    margin: 40px 0px;
     background-color: ${COLORS.white};
 
     h1 {
@@ -30,7 +30,7 @@ export const ExperienceContainer = styled.div`
 
      p {
         font-family: Mako;
-        margin: 0;
+        margin: 0 0 20px 0;
     }
 `;
 

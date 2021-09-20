@@ -54,15 +54,29 @@ const TechSection = ({ tech }) => {
     );
 }
 
-const ExperiencePane = ({companyName, jobTitle, subtitle, body, tech}) => {
+const ExperiencePane = ({
+    companyName,
+    jobTitle, 
+    secondJobTitle,
+    subtitle,
+    secondSubtitle, 
+    body, 
+    secondBody,
+    tech
+}) => {
     return (
         <S.ExperienceContainer>
             <h1>{companyName}</h1>
-            <h2>{jobTitle}</h2>
-            <h3><i>{subtitle}</i></h3>
-            <p>
+            { jobTitle && <>
+                <h2>{jobTitle}</h2>
+                <h3><i>{subtitle}</i></h3>
                 {body}
-            </p>
+            </>}
+            { secondJobTitle && <>
+                <h2>{secondJobTitle}</h2>
+                <h3><i>{secondSubtitle}</i></h3>
+                {secondBody}
+            </>}
             <TechSection tech={tech}/>
         </S.ExperienceContainer>
     );
