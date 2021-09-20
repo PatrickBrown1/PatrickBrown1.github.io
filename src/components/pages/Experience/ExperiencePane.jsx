@@ -1,23 +1,36 @@
 import React from 'react';
+
 import * as S from './ExperiencePane.styles.jsx';
 import COLORS from '../../../constants/colors';
-import { SiReact, SiRails, SiRuby, SiNodeDotJs, SiRedux } from 'react-icons/si';
+
+// icon imports
+import { SiReact, SiRails, SiRuby, SiNodeDotJs, SiRedux, SiStyledComponents } from 'react-icons/si';
+
+// Icon map, allows parent component to pass in the language as a string
+// and have it render as an icon
 const iconMap = {
     "ReactJS": <SiReact />,
     "Rails": <SiRails />,
     "Ruby": <SiRuby />,
     "Node": <SiNodeDotJs />,
     "Redux": <SiRedux />,
-
-
+    "Styled Components": <SiStyledComponents />,
 }
 const TechSection = ({ tech }) => {
     return (
         <S.IconContainer>
-            {tech.map(language => (    
-                <S.IconWrapper>
-                    {iconMap[language]}
-                </S.IconWrapper>
+            {tech.map(language => (  
+                <S.Popup 
+                    content={language} 
+                    trigger={
+                        <S.IconWrapper>
+                            {iconMap[language]}
+                        </S.IconWrapper>
+                    } 
+                    position="bottom center"
+                />
+  
+                
             ))}
         </S.IconContainer>
     );
@@ -41,7 +54,7 @@ const TechSection = ({ tech }) => {
 //         {image}
 //     </S.ImageContainer>
 // </S.InterestContainer>
-const ExperiencePane = ({companyName, jobTitle, subtitle, body}) => {
+const ExperiencePane = ({companyName, jobTitle, subtitle, body, tech}) => {
     // { title, content, image, inverted = false, color = COLORS.green}
     return (
         <S.ExperienceContainer>
@@ -51,7 +64,7 @@ const ExperiencePane = ({companyName, jobTitle, subtitle, body}) => {
             <p>
                 {body}
             </p>
-            <TechSection tech={["ReactJS", "Ruby", "Node", "Redux", "Rails"]} />
+            <TechSection tech={tech}/>
         </S.ExperienceContainer>
     );
 }

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import COLORS from '../../../constants/colors';
+import { Popup as Popup_ } from 'semantic-ui-react'
 
 export const ExperienceContainer = styled.div`
     position: relative;
@@ -39,5 +40,16 @@ export const IconContainer = styled.div`
 
 export const IconWrapper = styled.span`
     font-size: 40px;
-    padding: 0px 30px 0px 0px;
+    margin: 0px 15px 0px 15px;
+    cursor: pointer;
+`;
+
+export const Popup = styled(Popup_)`
+    padding: 5px;
+    text-align: center;
+    font-family: Mako;
+    font-size: 16px;
+    color: ${COLORS.black};
+    transition: all 0.5s;
+
 `;

@@ -20,6 +20,7 @@ const Experience = () => {
                     rutrum porta. Ut feugiat, elit et interdum iaculis, turpis massa suscipit urna, 
                     vel gravida lectus quam quis ligula.
                 "
+                tech={["ReactJS", "Ruby", "Node", "Redux", "Rails", "Styled Components"]}
             />
         </S.ExperienceContainer>
     );
