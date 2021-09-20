@@ -10,7 +10,7 @@ export const ExperienceContainer = styled.div`
     margin: 4px;
     max-width: 900px;
     min-height: 300px;
-
+    margin: 50px 0px;
     background-color: ${COLORS.white};
 
     h1 {

@@ -4,17 +4,37 @@ import * as S from './ExperiencePane.styles.jsx';
 import COLORS from '../../../constants/colors';
 
 // icon imports
-import { SiReact, SiRails, SiRuby, SiNodeDotJs, SiRedux, SiStyledComponents } from 'react-icons/si';
+import { 
+    SiReact, 
+    SiRails, 
+    SiRuby, 
+    SiNodeDotJs, 
+    SiRedux, 
+    SiStyledComponents,
+    SiMongodb,
+    SiGatsby,
+    SiTypescript,
+    SiJest
+} from 'react-icons/si';
+
+import {
+    FaLess
+} from 'react-icons/fa';
 
 // Icon map, allows parent component to pass in the language as a string
 // and have it render as an icon
 const iconMap = {
-    "ReactJS": <SiReact />,
+    "React": <SiReact />,
     "Rails": <SiRails />,
     "Ruby": <SiRuby />,
-    "Node": <SiNodeDotJs />,
+    "Node.js": <SiNodeDotJs />,
     "Redux": <SiRedux />,
     "Styled Components": <SiStyledComponents />,
+    "MongoDB": <SiMongodb />,
+    "Gatsby": <SiGatsby />,
+    "Less.js": <FaLess />,
+    "TypeScript": <SiTypescript />,
+    "Jest": <SiJest />
 }
 const TechSection = ({ tech }) => {
     return (
@@ -29,33 +49,12 @@ const TechSection = ({ tech }) => {
                     } 
                     position="bottom center"
                 />
-  
-                
             ))}
         </S.IconContainer>
     );
 }
-// const Border = ({inverted = false, color}) => {
-//     return (
-//         <>
-//             <S.TopBorder color={color} />
-//             <S.VerticalBorder color={color} />
-//             <S.BottomBorder color={color} />
-//         </>
-//     );
-// }
- // <S.InterestContainer inverted={inverted}>
-//     {/* <Border inverted={inverted} color={color}/> */}
-//     <S.MainContent color={color}> 
-//         <h2>{title}</h2>
-//         <p>{content}</p>
-//     </S.MainContent>
-//     <S.ImageContainer> 
-//         {image}
-//     </S.ImageContainer>
-// </S.InterestContainer>
+
 const ExperiencePane = ({companyName, jobTitle, subtitle, body, tech}) => {
-    // { title, content, image, inverted = false, color = COLORS.green}
     return (
         <S.ExperienceContainer>
             <h1>{companyName}</h1>
