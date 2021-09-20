@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./LinkView.css";
-import LinkedInImage from "../../assets/linked-in-image.png";
-import GithubImage from "../../assets/github-image.png";
-import EmailImage from "../../assets/email-image.png";
+import LinkedInImage from "../../../../assets/linked-in-image.png";
+import GithubImage from "../../../../assets/github-image.png";
+import EmailImage from "../../../../assets/email-image.png";
 import {useSpring, animated} from 'react-spring'
 
 function LinkItem(props){
     const [showInfo, setShowInfo] = useState(false);
-    const rightPadding = showInfo ? 150 : 0;
-    const width = showInfo ? props.maxWidth : '5em';
+    const rightPadding = showInfo ? 40 : 0;
+    const width = showInfo ? props.maxWidth : '4em';
     const sty = useSpring({paddingRight: rightPadding, maxWidth: width, minWidth: width, 
       from: {paddingRight: 0, maxWidth: width, minWidth: width}})
 

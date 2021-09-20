@@ -2,8 +2,6 @@
 
 .link-view {
     width: 100%;
-    height: 80vh;
-    padding-top: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +12,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin: 40px;
+    margin: 20px;
     overflow: hidden;
     border-radius: 2.5em / 2.5em;
     background-color: rgb(245, 245, 245);
@@ -25,26 +23,29 @@ a {
     color: black;
     display: inherit;
     align-items: center;
+    width: 100%;
 }
 .link-image {
-    max-width: 5em;
-    max-height: 5em;
+    max-width: 4em;
+    max-height: 4em;
     border-radius: 50%;
     background-color: white;
 }
 .big-text {
-    padding-left: 40px;
-    width: 100%;
+    padding-left: 30px;
     color: rgb(22, 0, 32);
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: 600;
+    margin: 0 !important;
     font-family: "Raleway", sans-serif;
 }
 .small-text {
     padding-left: 20px;
     width: 100%;
     color: rgb(22, 0, 32);
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 600;
+    margin: 0 !important;
+
     font-family: "Raleway", sans-serif;
 }
