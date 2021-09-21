@@ -27,6 +27,7 @@ const Experience = () => {
                     </p>
                 }
                 tech={["React", "Ruby", "Node.js", "Redux", "Rails", "Jest", "Styled Components"]}
+                link='http://www.halo.science'
             />
             <S.Divider color={COLORS.red}/>
             <ExperiencePane 
@@ -99,6 +100,7 @@ const Experience = () => {
                     </p>
                 }
                 tech={["React", "Node.js", "MongoDB"]}
+                link='https://tse.ucsd.edu/'
             />
             <S.Divider color={COLORS.yellow} />
             <ExperiencePane 
@@ -115,6 +117,7 @@ const Experience = () => {
                     </p>
                 }
                 tech={["React", "TypeScript", "Gatsby", "Less.js"]}
+                link='https://acmucsd.com'
             />
         </S.ExperienceContainer>
     );

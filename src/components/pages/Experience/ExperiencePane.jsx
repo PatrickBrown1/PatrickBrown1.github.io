@@ -62,11 +62,12 @@ const ExperiencePane = ({
     secondSubtitle, 
     body, 
     secondBody,
-    tech
+    tech,
+    link
 }) => {
     return (
         <S.ExperienceContainer>
-            <h1>{companyName}</h1>
+            <h1>{companyName} <a href={link} target='blank_'><S.LinkIcon /></a></h1>
             { jobTitle && <>
                 <h2>{jobTitle}</h2>
                 <h3><i>{subtitle}</i></h3>
