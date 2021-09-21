@@ -2,8 +2,7 @@ import React from 'react';
 import * as S from './AboutMe.styles';
 import Interest from './Interest';
 import COLORS from '../../../constants/colors';
-
-const AboutMe = () => {
+const AboutMe = ({windowSize}) => {
     return (
         <S.AboutMeContainer id="aboutme">
             <h1>A Little Bit About Me</h1>
@@ -21,6 +20,7 @@ const AboutMe = () => {
                     sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
                     dolor. Cras sit amet elementum elit, cursus venenatis nisl."   
                 image="👨‍🍳 🍰"/*🎂🍰*/
+                mobile={windowSize.width <= 650}
             />
             <Interest 
                 color={COLORS.yellow} 
@@ -36,6 +36,7 @@ const AboutMe = () => {
                     sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
                     dolor. Cras sit amet elementum elit, cursus venenatis nisl."   
                 image="🦍 💪"
+                mobile={windowSize.width <= 650}
             />
             <Interest 
                 color={COLORS.blue} 
@@ -51,6 +52,7 @@ const AboutMe = () => {
                     sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
                     dolor. Cras sit amet elementum elit, cursus venenatis nisl."            
                 image="👨‍💻"
+                mobile={windowSize.width <= 650}
             />
             <Interest 
                 color={COLORS.green} 
@@ -66,6 +68,7 @@ const AboutMe = () => {
                     sed, viverra quis nisi. Morbi libero ligula, iaculis sed lectus eget, posuere rhoncus
                     dolor. Cras sit amet elementum elit, cursus venenatis nisl."   
                 image="🎶 🎧"
+                mobile={windowSize.width <= 650}
             />
         </S.AboutMeContainer>
     );

@@ -13,17 +13,19 @@ const Border = ({inverted = false, color}) => {
     );
 }
 
-const Interest = ({ title, content, image, inverted = false, color = COLORS.green}) => {
+const Interest = ({ title, content, image, inverted = false, color = COLORS.green, mobile}) => {
     return (
         <S.InterestContainer inverted={inverted}>
             <Border inverted={inverted} color={color}/>
-            <S.MainContent color={color}> 
-                <h2>{title}</h2>
+            <S.MainContent mobile={mobile} color={color}> 
+                <h2>{mobile ? `${title}   ${image}` : title}</h2>
                 <p>{content}</p>
             </S.MainContent>
-            <S.ImageContainer> 
-                {image}
-            </S.ImageContainer>
+            {!mobile && 
+                <S.ImageContainer> 
+                    {image}
+                </S.ImageContainer>
+            }
         </S.InterestContainer>
     );
 }

@@ -18,7 +18,7 @@ export const MainContent = styled.div`
     display: block;
     padding: 30px;
 
-    width: 60%;
+    width: ${props => props.mobile ? '75%' : '60%'};
 
     h2 {
         font-family: Average Sans;

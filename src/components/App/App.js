@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Hero windowSize={windowSize} />
-      <AboutMe />
+      <AboutMe windowSize={windowSize} />
       <Experience />
       <Contact />
     </>
