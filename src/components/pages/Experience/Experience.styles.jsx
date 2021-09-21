@@ -12,11 +12,10 @@ export const ExperienceContainer = styled.div`
     min-height: 100vh; // needs to change
     
     box-sizing: border-box;
-    border: 2px solid ${COLORS.yellow};
 
     h1 {
         font-family: Istok Web;
-        margin: 30px 0px;
+        margin: 70px 0px 10px 0;
     }
 `;
 

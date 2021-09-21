@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
 
     margin: 0;
     width: 100vw;
-    height: 100vh; // needs to change
+    min-height: 80vh; // needs to change
     
     box-sizing: border-box;
 `;

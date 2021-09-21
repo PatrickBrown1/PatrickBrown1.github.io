@@ -15,6 +15,6 @@ export const ContactContainer = styled.div`
 
     h1 {
         font-family: Istok Web;
-        margin: 30px 0px;
+        margin: 70px 0px 10px 0;
     }
 `;

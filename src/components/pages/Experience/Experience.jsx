@@ -120,6 +120,7 @@ const Experience = () => {
                 tech={["React", "TypeScript", "Gatsby", "Less.js"]}
                 link='https://acmucsd.com'
             />
+            <S.Divider color={COLORS.blue} />
         </S.ExperienceContainer>
     );
 }
