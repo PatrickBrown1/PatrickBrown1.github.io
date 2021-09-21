@@ -107,15 +107,11 @@ const Experience = () => {
                 subtitle="Jan. 2021 - Aug. 2021" 
                 body={
                     <p>
-                        Here's what i did Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque facilisis eget turpis nec laoreet. Aliquam sollicitudin rutrum est,
-                        nec dignissim dolor varius eu. Nunc sollicitudin arcu nec enim bibendum, 
-                        ut tincidunt ipsum efficitur. Integer eget aliquam neque. Morbi eget ultricies 
-                        magna. Quisque lectus tellus, dictum et mattis efficitur, aliquam euismod metus.
-                        Nam at quam in sem molestie mollis. Ut non turpis porttitor, elementum sapien
-                        nec, feugiat orci. Fusce vitae sapien magna. Nam ullamcorper erat vitae nulla 
-                        rutrum porta. Ut feugiat, elit et interdum iaculis, turpis massa suscipit urna, 
-                        vel gravida lectus quam quis ligula.
+                        In my time as a developer at ACM UCSD, I worked on a team of 3 designers and 
+                        2 developers to create and launch a new and improved home website for the student
+                        organization. The techstack we used on this project was React, TypeScript, and Gatsby, and Less.js.
+                        <br /> <br />
+                        The final version of the website can be found <a href='http://www.acmucsd.com' target='blank_'>here</a> and the github repository for the project can be found <a href='https://github.com/acmucsd/main-website' target='blank_'>here</a>!
                     </p>
                 }
                 tech={["React", "TypeScript", "Gatsby", "Less.js"]}
