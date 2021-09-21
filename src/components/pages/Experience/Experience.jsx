@@ -15,15 +15,16 @@ const Experience = () => {
                 subtitle="Apr. 2021 - Sept. 2021 (5 Months)" 
                 body={
                     <p>
-                        Here's what i did Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Quisque facilisis eget turpis nec laoreet. Aliquam sollicitudin rutrum est,
-                        nec dignissim dolor varius eu. Nunc sollicitudin arcu nec enim bibendum, 
-                        ut tincidunt ipsum efficitur. Integer eget aliquam neque. Morbi eget ultricies 
-                        magna. Quisque lectus tellus, dictum et mattis efficitur, aliquam euismod metus.
-                        Nam at quam in sem molestie mollis. Ut non turpis porttitor, elementum sapien
-                        nec, feugiat orci. Fusce vitae sapien magna. Nam ullamcorper erat vitae nulla 
-                        rutrum porta. Ut feugiat, elit et interdum iaculis, turpis massa suscipit urna, 
-                        vel gravida lectus quam quis ligula.
+                        Halo is a multisided platform startup that connects companies who need technical research with qualified researchers.
+                        In my time at Halo, I worked on numerous projects and learned a lot about the technical side of fullstack development,
+                        and garnered insight into customer driven design. Some of my notable accomplishments through the duration of my internship were
+                        <ul>
+                            <li>Developed multifaced user signup and onboarding flow</li>
+                            <li>Implemented E2E tests with Jest Puppeteer for user onboarding, registration, and verification</li>
+                            <li>Used React Hooks and Redux to reimplement main user dashboard, reducing load times, fixing glitches and improving user experience</li>
+                            <li>Developed reusable components for new component library</li>
+                            <li>Began reimplementing Rails routes in Node as a part of a large-scale backend migration</li>
+                        </ul>
                     </p>
                 }
                 tech={["React", "Ruby", "Node.js", "Redux", "Rails", "Jest", "Styled Components"]}
