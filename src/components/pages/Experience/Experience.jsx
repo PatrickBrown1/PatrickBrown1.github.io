@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from "react-scroll";
-import { Divider } from 'semantic-ui-react'
+import COLORS from '../../../constants/colors';
 
 import * as S from './Experience.styles';
 import ExperiencePane from './ExperiencePane.jsx';
+
 const Experience = () => {
     return (
         <S.ExperienceContainer id="experience">
@@ -27,19 +28,20 @@ const Experience = () => {
                 }
                 tech={["React", "Ruby", "Node.js", "Redux", "Rails", "Jest", "Styled Components"]}
             />
-            <S.Divider />
+            <S.Divider color={COLORS.red}/>
             <ExperiencePane 
                 companyName="Triton Software Engineering" 
-                jobTitle="Incoming Developer Lead" 
+                jobTitle="Incoming Development Manager" 
                 subtitle="Starting Oct. 2021" 
                 body={
                     <p>
-                        This coming year, I will be working as a Developer Lead, an executive board role at TSE!
+                        This coming year, I will be working as a Development Manager, an executive board role at TSE!
                         <br /><br />
                         In this role I'll have many responsibilities, including
                         <ul>
                             <li>Leading a team of 5-7 developers on a completely new project (still to be announced)</li>
                             <li>Creating technical documentation for the entire application, from front-end file structure to database schema</li>
+                            <li>Assigning tasks to my developers and overseeing their timely completion</li>
                             <li>Leading weekly standups and attending executive board meetings</li>
                             <li>And much much more!</li>
                         </ul>                    
@@ -98,7 +100,7 @@ const Experience = () => {
                 }
                 tech={["React", "Node.js", "MongoDB"]}
             />
-            <S.Divider />
+            <S.Divider color={COLORS.yellow} />
             <ExperiencePane 
                 companyName="ACM @ UCSD" 
                 jobTitle="Developer" 

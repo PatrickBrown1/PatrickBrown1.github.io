@@ -17,7 +17,7 @@ function LinkItem(props){
           onMouseEnter={() => setShowInfo(true)} 
           onMouseLeave={() => setShowInfo(false)}
         >
-            <a href={props.link}>
+            <a className="slider-link" href={props.link}>
               <img className="link-image" src={props.src} alt="Patrick Brown" />
               {showInfo && <h1 className={props.textClass}>{props.name}</h1>}
             </a>

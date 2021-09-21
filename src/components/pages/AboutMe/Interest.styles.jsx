@@ -6,7 +6,7 @@ export const InterestContainer = styled.div`
     display: flex;
     flex-direction: ${props => props.inverted ? `row-reverse` : `row`};
 
-    margin: 4px;
+    margin: 4px 40px;
     max-width: 900px;
     min-height: 300px;
 

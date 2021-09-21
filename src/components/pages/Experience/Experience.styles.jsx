@@ -22,7 +22,7 @@ export const ExperienceContainer = styled.div`
 
 export const Divider = styled.div`
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     min-height: 2px;
-    background-color: ${COLORS.light_grey};
+    background-color: ${props => props.color};
 `;

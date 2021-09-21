@@ -4,17 +4,14 @@ import { Popup as Popup_ } from 'semantic-ui-react'
 
 export const ExperienceContainer = styled.div`
     position: relative;
-    // display: flex;
-    // flex-direction: ${props => props.inverted ? `row-reverse` : `row`};
 
-    margin: 4px;
     max-width: 900px;
     min-height: 300px;
-    margin: 40px 0px;
+    margin: 40px;
     background-color: ${COLORS.white};
 
     h1 {
-        font-family: Average Sans;
+        font-family: Istok Web;
         margin: 0 0 10px 0;
     }
 
