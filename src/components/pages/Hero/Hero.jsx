@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Hero.styles';
 
-import PatrickImage from "../../../assets/PatrickPicture.jpg";
+import PatrickImage from "../../../assets/PatrickPicture3.png";
 
 const Hero = ({ windowSize }) => {
     return (
