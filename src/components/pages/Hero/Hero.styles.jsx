@@ -84,3 +84,13 @@ export const Link = styled(_Link)`
         color: #44445F;
     }
 `;
+export const ExternalLink = styled.a`
+    color: ${COLORS.black};
+    text-decoration: none;
+    padding: 0px 5px;
+    white-space: nowrap;
+    cursor: pointer;
+    :hover {
+        color: #44445F;
+    }
+`;

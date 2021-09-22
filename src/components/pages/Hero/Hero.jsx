@@ -35,15 +35,11 @@ const Hero = ({ windowSize }) => {
                                 </S.Link>
                             </span>
                             <span>
-                                <S.Link
-                                    activeClass="active"
-                                    to="experience"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
+                                
+                                <S.ExternalLink href="https://docs.google.com/document/d/1Zp8EawhbhsOACtGIp4kMzof2Tf7TkZqAimDv45DLMzw/edit?usp=sharing"
+                                    target='blank_'>
                                     Resume
-                                </S.Link>
+                                </S.ExternalLink>
                                 <S.Link
                                     activeClass="active"
                                     to="contact"
