@@ -30,7 +30,7 @@ const Experience = () => {
                 tech={["React", "Ruby", "Node.js", "Redux", "Rails", "Jest", "Styled Components"]}
                 link='http://www.halo.science'
             />
-            <S.Divider color={COLORS.red}/>
+            {/* <S.Divider color={COLORS.red}/> */}
             <ExperiencePane 
                 companyName="Triton Software Engineering" 
                 jobTitle="Incoming Development Manager" 
@@ -103,7 +103,7 @@ const Experience = () => {
                 tech={["React", "Node.js", "MongoDB"]}
                 link='https://tse.ucsd.edu/'
             />
-            <S.Divider color={COLORS.yellow} />
+            {/* <S.Divider color={COLORS.yellow} /> */}
             <ExperiencePane 
                 companyName="ACM @ UCSD" 
                 jobTitle="Developer" 
@@ -120,7 +120,7 @@ const Experience = () => {
                 tech={["React", "TypeScript", "Gatsby", "Less.js"]}
                 link='https://acmucsd.com'
             />
-            <S.Divider color={COLORS.blue} />
+            {/* <S.Divider color={COLORS.blue} /> */}
         </S.ExperienceContainer>
     );
 }
