@@ -28,9 +28,9 @@ function LinkItem(props){
 function LinkView() {
   return (
       <div className="link-view">
-        <LinkItem name="PatrickBrown" link="https://www.linkedin.com/in/p-brown" src={LinkedInImage} maxWidth='15em' textClass="big-text"/>
+        <LinkItem name="Patrick Brown" link="https://www.linkedin.com/in/p-brown" src={LinkedInImage} maxWidth='15em' textClass="big-text"/>
         <LinkItem name="PatrickBrown1" link="https://github.com/PatrickBrown1" src={GithubImage} maxWidth='15em' textClass="big-text"/>
-        <LinkItem name="PatrickBrown1312@gmail.com" link="" src={EmailImage} maxWidth='20em' textClass="small-text"/>
+        <LinkItem name="PatrickBrown1312@gmail.com" link="mailto:patrickbrown1312@gmail.com" src={EmailImage} maxWidth='20em' textClass="small-text"/>
       </div>
   );
 }

@@ -8,7 +8,7 @@ export const InterestContainer = styled.div`
 
     margin: 4px 40px;
     max-width: 900px;
-    min-height: 300px;
+    min-height: 150px;
 
     background-color: ${COLORS.white};
 `;
